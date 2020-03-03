@@ -1,12 +1,9 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 body{
+    height: auto;
     margin: 0;
     padding-top: 0;
     font-family: sans-serif;
 }
-
-
 .header{
     display: flex;
     flex-direction: row;
@@ -16,19 +13,12 @@ body{
     padding: 0;
 }
 
-.social{
-}
-
 .intro {
     width: 400px;
     margin: 0 auto;
 
 }
-=======
-=======
->>>>>>> 3a16e0a97ba790395aec18bf1d87e703032ce8d7
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
@@ -39,9 +29,3 @@ footer {
  h6{
      font-size: 20px;
  }
-<<<<<<< HEAD
-    
->>>>>>> add footer
-=======
-    
->>>>>>> 3a16e0a97ba790395aec18bf1d87e703032ce8d7
