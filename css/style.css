@@ -4,8 +4,6 @@ body{
     padding-top: 0;
     font-family: sans-serif;
 }
-
-
 .header{
     display: flex;
     flex-direction: row;
@@ -21,7 +19,6 @@ body{
 
 }
 footer {
-    position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
