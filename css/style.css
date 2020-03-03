@@ -1,3 +1,5 @@
+<<<<<<< HEAD
+<<<<<<< HEAD
 body{
     margin: 0;
     padding-top: 0;
@@ -22,3 +24,24 @@ body{
     margin: 0 auto;
 
 }
+=======
+=======
+>>>>>>> 3a16e0a97ba790395aec18bf1d87e703032ce8d7
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:black;
+    color: white;
+    text-align: center;
+ }
+ h6{
+     font-size: 20px;
+ }
+<<<<<<< HEAD
+    
+>>>>>>> add footer
+=======
+    
+>>>>>>> 3a16e0a97ba790395aec18bf1d87e703032ce8d7
