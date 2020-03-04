@@ -1,5 +1,4 @@
 // This is a constructor representing total basic needs capital
-
 function Fund(rent,food,transport,insurance,emergency,total){
     this.rent=rent;
     this.food=food;
@@ -16,6 +15,15 @@ function Other(item, value){
     this.value = value;
 }
 
+function addValues(){
+    var itemsTotal = 0;
+    for (var i in itemsArray){
+        itemsTotal += itemsArray[i].value;
+    };
+    return itemsTotal;
+}
+
+
 var itemsArray = [];
 
 // Assign  all the figure to  zero and  make them global variables
@@ -31,35 +39,35 @@ var remAmount;
 var user;
 var balance = total;
 
-
+$('.postIncome').click(function(){
+    $('.bal').append(total);
+});
 
 $(document).ready(function(){
     // If by any chance the user inputs characters instead of integers/numbers 
 
 
     
-    $("#total-amount, #new-rent, #new-food, #new-transport, #new-insurance, #new-emergency, #new-amount").keypress(function(e){
+    $("#earnings, #new-rent, #new-food, #new-transport, #new-insurance, #new-emergency").keypress(function(e){
         if((e.which !=8 || e.which!=0) && (e.which <48 || e.which>57)){
-            $('.no-input').show().fadeToggle(3000);        
+            // $('.no-input').show().fadeToggle(3000); 
+            $(".no-input").html("PLEASE INPUT AMOUNT!").show().fadeOut(3000);       
             return false;
         }
-        // on keypress the amount of money will reduce with inputs
-        // remAmount=total-rent-food-transport-insurance-emergency;
-        
        
     });
 
 
-    $('#postIncome').click(function(){
-        $('.bal').append(total);
-    });
+    // $('#postIncome').click(function(){
+    //     $('.bal').append(total);
+    // });
 
 
 
     $('.submit').click(function(event){
         event.preventDefault();
-        total=Number($('#total-amount').val());
-        var sumTotal =Number($('.bal').val());
+        total=Number($('#earnings').val());
+        // var sumTotal =Number($('.bal').val());
          rent=Number($('#new-rent').val());
          food=Number($('#new-food').val());
          transport=Number($('#new-transport').val());
@@ -85,12 +93,22 @@ $(document).ready(function(){
         $('#tableInsurance').append(insurance);
         $('#tableEmergency').append(emergency);
         $('#tableTotal').append(remAmount);
-        sumTotal = total - remAmount;
-        $('.bal').html(sumTotal);
+        var sumTotal;
+        sumTotal = total - remAmount-addValues();
+                 $('.bal').text(sumTotal);
 
-        if(remAmount<0){
-            alert("Sorry! Your out of money");
+        var remTotal=remAmount+addValues();
+        var arrayTotal=[remTotal];
+
+
+        arrayTotal.push(remTotal);
+
+
+        if(remAmount + addValues() > total){
+            // alert("Sorry! Your out of money");
             // $('.bal').html(0);
+            arrayTotal.pop(remTotal);
+             $('.bal').html(sumTotal-remAmount);
             return false;
         }
 
@@ -105,17 +123,15 @@ $(document).ready(function(){
             $("#new-amount").keypress(function (e) {
 
             if (e.keyCode != 8 && e.keyCode != 0 && (e.keyCode < 48 || e.keyCode > 57)) {
-            $("#errmsg").html("Digits Only").show().fadeOut(3000);
+            $("#error").html("Digits Only").show().fadeOut(3000);
             return false;
             }
-
-            // $('.bal').html(sumTotal);
             });
 
 
 
 
-                $('.btn').click(function(event){
+                $('.btn1').click(function(event){
                     event.preventDefault();
 
 
@@ -125,21 +141,7 @@ $(document).ready(function(){
                     var inputValue = Number($('#new-amount').val());
                     var inputs = new Other(inpuitItem, inputValue);
 
-
-                    function addValues(){
-                        var itemsTotal = 0;
-                        for (var i in itemsArray){
-                            itemsTotal += itemsArray[i].value;
-                        };
-                        return itemsTotal;
-                    }
-
-
-
                     itemsArray.push(inputs);
-                    var balance = income - addValues();
-
-
 
 
 
@@ -150,15 +152,31 @@ $(document).ready(function(){
 
 
 
+
+                   
+
+
+                    
+                    // var balance = income - addValues();
+
+
+
+
+
+
+
+
+
                 
-                    if ( balance < 0 && addValues() > income ) {
-                    inputs.item = $("#error").html("Amount more than balance").show().fadeIn(3000);
-                    // inputs.value = 0;
+                    if ( remAmount + addValues() > total ) {
+                    inputs.item = $("#error").html("Amount more than balance").show().fadeToggle(3000);
+
                     itemsArray.pop(inputs);
-                    balance = income - addValues();
+
+                    // balance = income - addValues();
                     } else {
                         $("#error").hide();
-                        $('.bal').text(balance);
+                        $('.bal').text(sumTotal);
                         $('tbody').append( '<tr>'+
                                         `<td >${inputs.item}</td>`+
                                         `<td >${inputs.value}</td>`+

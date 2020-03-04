@@ -47,14 +47,17 @@ footer {
      font-size: 20px;
      text-decoration: underline;
  }
+
  .no-input{
-     display: none;
-     text-align: center;
-     background-color: red;
+     /* display: none;
+     text-align: center; */
+     background-color:  rgb(255,0,0, .5);
      font-weight: bold;
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-     font-size: 20px;
+     font-size: 40px;
+     color: white;
  }
+
  .bal{
      border: 1px solid;
      padding: 5px 70px;
@@ -98,23 +101,16 @@ footer {
 
 #error{
     font-weight: bold;
-    color: red;
-    font-size: 20px;
+    background-color: rgb(255,0,0, .5);
+    color:white;
+    font-size: 40px;
 }
 
-
-table, th, td{
-    border: 1px solid;
-    border-radius: 5px;
-}
 
 tfoot{
     font-weight: bold;
 }
 
-#postIncome{
-    background: green;
-}
  h6{
      font-style: inherit;
      text-emphasis: bold;
@@ -146,4 +142,11 @@ tfoot{
      margin-top: 20px;
      margin-left:30px;
  }
- 
+ .table{
+     background-color:rgb(0,0,0, .5);
+     color: white;
+     padding: 20px;
+ }
+ .displayResult{
+     padding-top: 40px;
+ }
