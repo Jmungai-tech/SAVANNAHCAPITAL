@@ -16,7 +16,6 @@ body{
 .intro {
     width: 400px;
     margin: 0 auto;
-
 }
 footer {
     left: 0;
@@ -36,4 +35,28 @@ footer {
  }
  h5{
      color:grey;
+ }
+ .bal{
+     border: 1px solid;
+     padding: 5px 70px;
+     border-radius: 5px;
+     color: rgb(0, 0, 0, .3);
+     width: 200px;
+     height: 40px;
+ }
+ 
+ .column{
+     float:left;
+     width:90%;
+     padding:10px;
+     height:300px;
+ }
+ .row:after{
+     content:"";
+     display:table;
+     clear:both;
+ }
+ h1{
+     text-align: center;
+     text-decoration: black;
  }
