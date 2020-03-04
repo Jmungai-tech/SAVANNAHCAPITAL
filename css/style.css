@@ -1,3 +1,4 @@
+
 body{
     height: auto;
     margin: 0;
@@ -73,3 +74,37 @@ footer {
      text-align: center;
      text-decoration: black;
  }
+
+
+ .displayResult{
+    margin-top: 50px;
+    bottom: 0;
+}
+
+
+#errmsg{
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+
+
+#error{
+    font-weight: bold;
+    color: red;
+    font-size: 20px;
+}
+
+
+table, th, td{
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+tfoot{
+    font-weight: bold;
+}
+
+#postIncome{
+    background: green;
+}
