@@ -1,5 +1,4 @@
 // This is a constructor representing total basic needs capital
-
 function Fund(rent,food,transport,insurance,emergency,total){
     this.rent=rent;
     this.food=food;
