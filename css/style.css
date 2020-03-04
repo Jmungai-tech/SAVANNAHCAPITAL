@@ -36,6 +36,19 @@ footer {
  h5{
      color:grey;
  }
+ .Tamount{
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+     text-decoration: underline;
+ }
+ .no-input{
+     display: none;
+     text-align: center;
+     background-color: red;
+     font-weight: bold;
+     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+     font-size: 20px;
+ }
  .bal{
      border: 1px solid;
      padding: 5px 70px;
