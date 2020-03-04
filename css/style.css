@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding-top: 0;
     font-family: sans-serif;
-
 }
 .header{
     display: flex;
@@ -17,7 +16,6 @@ body{
 .intro {
     width: 400px;
     margin: 0 auto;
-
 }
 footer {
     left: 0;
