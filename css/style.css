@@ -3,6 +3,7 @@ body{
     margin: 0;
     padding-top: 0;
     font-family: sans-serif;
+
 }
 .header{
     display: flex;
@@ -36,4 +37,31 @@ footer {
  }
  h5{
      color:grey;
+ }
+ /* .text{
+     text-align: center;
+ } */
+ .bal{
+     border: 1px solid;
+     padding: 5px 70px;
+     border-radius: 5px;
+     color: rgb(0, 0, 0, .3);
+     width: 200px;
+     height: 40px;
+ }
+ 
+ .column{
+     float:left;
+     width:90%;
+     padding:10px;
+     height:300px;
+ }
+ .row:after{
+     content:"";
+     display:table;
+     clear:both;
+ }
+ h1{
+     text-align: center;
+     text-decoration: black;
  }
