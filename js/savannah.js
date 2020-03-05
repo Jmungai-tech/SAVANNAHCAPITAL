@@ -1,4 +1,5 @@
 // This is a constructor representing total basic needs capital
+
 function Fund(rent,food,transport,insurance,emergency,total){
     this.rent=rent;
     this.food=food;
@@ -44,7 +45,6 @@ $('.postIncome').click(function(){
 });
 
 $(document).ready(function(){
-    // If by any chance the user inputs characters instead of integers/numbers 
 
 
     
@@ -58,9 +58,7 @@ $(document).ready(function(){
     });
 
 
-    // $('#postIncome').click(function(){
-    //     $('.bal').append(total);
-    // });
+
 
 
 
@@ -77,16 +75,7 @@ $(document).ready(function(){
          remAmount=rent + food + transport + insurance + emergency;
 
 
-        //  var balance = earning - ();
 
-
-        // user= new Fund(rent,food,transport,insurance,emergency,total);
-
-        
-        // user.remAmount.push(remAmount);
-        
-
-        // append each item amount
         $('#tableRent').append(rent);
         $('#tableFood').append(food);
         $('#tableTransport').append(transport);
@@ -105,8 +94,7 @@ $(document).ready(function(){
 
 
         if(remAmount + addValues() > total){
-            // alert("Sorry! Your out of money");
-            // $('.bal').html(0);
+
             arrayTotal.pop(remTotal);
              $('.bal').html(sumTotal-remAmount);
             return false;
@@ -114,8 +102,7 @@ $(document).ready(function(){
 
 
 
-        // itemsArray.push(inputs);
-        // var balance = income - addValues();
+
 
 
 
@@ -131,8 +118,12 @@ $(document).ready(function(){
 
 
 
-                $('.btn1').click(function(event){
-                    event.preventDefault();
+
+
+
+                    $('.btn1').click(function(event){
+                          event.preventDefault();
+
 
 
                     var income = sumTotal; 
@@ -153,16 +144,11 @@ $(document).ready(function(){
 
 
 
+
                    
 
 
                     
-                    // var balance = income - addValues();
-
-
-
-
-
 
 
 
@@ -185,7 +171,7 @@ $(document).ready(function(){
                     }
 
 
-                    // var subTotal = remAmount + addValues();
+
                     $("#new-description").val('')
                     $("#new-amount").val('')
                     $('#total').html(addValues());
