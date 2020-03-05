@@ -1,3 +1,4 @@
+
 body{
     height: auto;
     margin: 0;
@@ -36,6 +37,18 @@ footer {
  h5{
      color:grey;
  }
+ .social ul{
+    text-decoration: none;
+    list-style-type: none;
+
+ }
+ .social ul li{
+     display: inline;
+     padding-right: 30px;
+     text-align: center;
+     font-size: 30px;
+     border-radius: 50%;
+ }
  .Tamount{
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: 20px;
@@ -73,3 +86,4 @@ footer {
      text-align: center;
      text-decoration: black;
  }
+
