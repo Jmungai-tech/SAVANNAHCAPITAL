@@ -42,8 +42,9 @@
           <div class="col-md-6">
             <form action="" class="submit">
                 <div class="text">
-                  <label for="total-amount" class="Tamount">TOTAL AMOUNT   </label>  <span class="no-input border border-lg">PLEASE INPUT AMOUNT!</span>
-                  <input type="text" size="20" class="form-control" id="total-amount" style=" height: 40px; width: 300px; align-content: center;">
+                  <label for="total-amount" class="Tamount">TOTAL INCOME   </label>  
+                  <input type="text" size="20" class="form-control" id="total-amount" style=" height: 40px; width: 200px; align-content: center;"><span><button id="postIncome">Submit Income</button></span>
+                  
                 </div>
                 <div id="basics">
                     <div class="column" style="background-color:gray;">
@@ -92,6 +93,39 @@
                     </div>
                     </div> 
             </form>
+
+
+            <div class="container">  
+                        <span class="no-input border border-lg">PLEASE INPUT AMOUNT!</span>
+                    
+                        <div class="displayResult">
+                                 <table>
+                                    <thead>
+                                    <tr>
+                                        <th>Item Description</th>
+                                        <th>Amounts</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                    
+                                    
+                                    </tbody>
+                                    <tfoot>
+                                    <tr>
+                                        <td>Total</td>
+                                        <td id="total"></td>
+                                        
+                                    </tr>
+                                    </tfoot>
+                                </table> 
+            
+                            <p id="error"></p>
+            
+                        </div>
+                
+            </div>   
+    
+
 
     <footer>
         <div class="contacts"> 
