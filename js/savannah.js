@@ -96,8 +96,8 @@ $(document).ready(function(){
 
 
 
-        itemsArray.push(inputs);
-        var balance = income - addValues();
+        // itemsArray.push(inputs);
+        // var balance = income - addValues();
 
 
 
