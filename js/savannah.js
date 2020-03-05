@@ -96,8 +96,8 @@ $(document).ready(function(){
 
 
 
-        itemsArray.push(inputs);
-        var balance = income - addValues();
+        // itemsArray.push(inputs);
+        // var balance = income - addValues();
 
 
 
@@ -187,12 +187,7 @@ $(document).ready(function(){
                     
 
 
-                    console.log(sumTotal);
-                    // console.log(balance);
-                    console.log(addValues());
-
-                    console.log(itemsArray);
-
+                   
 
                 });
 

@@ -66,7 +66,7 @@ footer {
  
  .column{
      float:left;
-     width:90%;
+     width:600px;
      /* padding:10px;
      height:300px; */
      box-shadow: 5px 5px 30px black, -5px -5px 30px black;
@@ -139,7 +139,7 @@ tfoot{
      border-radius: 50%;
  }
  .bal{
-     margin-bottom:20px;
+     margin-bottom:50px;
  }
  img{
      height:70px;
