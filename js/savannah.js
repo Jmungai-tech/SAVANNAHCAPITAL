@@ -96,12 +96,8 @@ $(document).ready(function(){
 
 
 
-
-        console.log(rent);
-        console.log(transport);
-        console.log(food);
-        
-    //  });
+        itemsArray.push(inputs);
+        var balance = income - addValues();
 
 
 
