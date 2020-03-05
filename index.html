@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
@@ -16,11 +17,14 @@
             <h1>SAVANNAH CAPITAL</h1>
             <p>Towards Better Funds Management</p>
         </div>
-         <div class="social">
-            <img src="images/facebook.png" alt="fb">
-            <img src="images/you_tube.png" alt="yt">
-            <img src="images/twitter.png" alt="twit">
-        </div>
+        <div class="social">
+            <ul>
+                <li><a href="http://facebook.com" target="_blank" title="FACEBOOK"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                <li><a href="http://instagram.com" target="_blank" title="INSTAGRAM"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                <li><a href="http://github.com" target="_blank" title="GITHUB"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="http://twitter.com" target="_blank" title="TWITTER"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+            </ul>            
+       </div>
     </div>
 
     <div class="introduction">
@@ -32,63 +36,69 @@
 
 
     <div class="container-fluid">      
-        <h1>Funds Management</h1>
-      <div class="form-group">
-        <div class="row">
-          <div class="col-md-6">
-            <form action="" class="submit">
+      <h1>Funds Management</h1>
+          <div class="row">
+            <div class="col-md-6">
+              <div class="form-group">
                 <div class="text">
-                  <label for="total-amount" class="Tamount">TOTAL INCOME   </label>  
-                  <input type="text" size="20" class="form-control" id="total-amount" style=" height: 40px; width: 200px; align-content: center;"><span><button id="postIncome">Submit Income</button></span>
-                  
+                  <label for="total-amount">TOTAL AMOUNT</label>
+                  <input type="text" size="20" class="form-control" id="total-amount" style=" height: 40px; width: 300px; align-content: center;">
                 </div>
-                <div id="basics">
-                    <div class="column" style="background-color:gray;">
-                  <div class="form-group">
-                    <label for="new-rent">RENT</label>
-                    <input type="text"  id="new-rent">
-                  </div>
-                  <div class="form-group">
-                    <label for="new-food">FOOD</label>
-                    <input type="text"  id="new-food">
-                  </div>
-                      <div class="form-group">
-                        <label for="new-transport">TRANSPORT</label>
-                        <input type="text" id="new-transport">
-                        </div>
-                      <div class="form-group">
-                        <label for="new-insurance">INSUARANCE</label>
-                        <input type="text" id= "new-insurance">
-                      </div>
-                      <div class="form-group">
-                        <label for="new-emergency">EMERGENCY</label>
-                        <input type="text"  id = "new-emergency">
-                      </div>
-                      <button class="btn btn-primary submit" type="submit">Submit</button>
-                    </div>
-                  </div>
+               </div>
+             
+            <div id="basics">
+              <div class="column">
+                  <h3>IMPORTANT</h3>
+                <div class="form-group">
+                  <label for="new-rent">RENT</label>
+                  <input type="text" class="form-control"   id="new-rent">
+                </div>
+            <div class="form-group">
+               <label for="new-food">FOOD</label>
+               <input type="text" class="form-control" id="new-food">
             </div>
-            </form>
-            <form>
-              <div class="col-md-6">
-                <h6>BALANCE</h6>
-                  <div class="bal">
-                    <p> BALANCE</p>
-                  </div>
-                 <div class="column" style="background-color:grey;">
-                    <h2>OTHERS</h2>
+            <div class="form-group">
+                 <label for="new-transport">TRANSPORT</label>
+                <input type="text" class="form-control" id="new-transport">
+            </div>
+            <div class="form-group">
+                <label for="new-insurance">INSURANCE</label>
+                <input type="text" class="form-control" id= "new-insurance">
+            </div>
+            <div class="form-group">
+                <label for="new-emergency">EMERGENCY</label>
+                <input type="text" class="form-control"  id= "new-emergency">
+            </div>
+
+            <button class="btn btn-primary" type="submit">Submit</button>
+
+            </div>
+        </div>
+    </div>
+            
+         <dIv class="col-md-6">
+            <h6>BALANCE</h6>
+            <div class="bal">
+                <p> BALANCE</p>
+            </div>
+              <div class="column">
+                <h3>OTHERS</h3>
                     <div class="form-group">
                         <label for="new-description">DESCRIPTION</label>
-                        <input type="text"  id = "new-description">
-                      </div>
-                      <div class="form-group">
-                        <label for="new-amount">AMOUNT</label>
-                        <input type="text"  id = "new-amount">
-                      </div>
-                        <button class="btn btn-primary submit" type="submit">Submit</button>
+                        <input type="text"class="form-control"  id = "new-description">
                     </div>
-                    </div> 
-            </form>
+
+                    <div class="form-group">
+                       <label for="new-amount">AMOUNT</label>
+                       <input type="text" class="form-control"  id = "new-amount">
+                    </div>
+                    <button class="btn btn-primary" type="submit">Submit</button>
+                    
+                </div>
+            </dIv> 
+        </div>
+    </div>  
+</div>
 
 
             <div class="container">  

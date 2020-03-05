@@ -4,6 +4,10 @@ body{
     margin: 0;
     padding-top: 0;
     font-family: sans-serif;
+    background: url(../images/money.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 .header{
     display: flex;
@@ -17,6 +21,7 @@ body{
 .intro {
     width: 400px;
     margin: 0 auto;
+    text-align: center;
 }
 footer {
     left: 0;
@@ -35,7 +40,7 @@ footer {
      font-style: inherit;
  }
  h5{
-     color:grey;
+     color:black;
  }
  .Tamount{
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -62,8 +67,10 @@ footer {
  .column{
      float:left;
      width:90%;
-     padding:10px;
-     height:300px;
+     /* padding:10px;
+     height:300px; */
+     box-shadow: 5px 5px 30px black, -5px -5px 30px black;
+     padding:20px;
  }
  .row:after{
      content:"";
@@ -108,3 +115,35 @@ tfoot{
 #postIncome{
     background: green;
 }
+ h6{
+     font-style: inherit;
+     text-emphasis: bold;
+ }
+ h1{
+     color:whitesmoke;
+     font-style: inherit;
+ }
+ h3{
+     color:black;
+     text-shadow: 5px 5px 20px black, -5px -5px 20px black;
+ }
+ .social ul li{
+     text-decoration: none;
+     list-style-type: none;
+ }
+ .social ul li{
+     display:inline;
+     padding-right: 30px;
+     text-align: center;
+     font-size: 30px;
+     border-radius: 50%;
+ }
+ .bal{
+     margin-bottom:20px;
+ }
+ img{
+     height:70px;
+     margin-top: 20px;
+     margin-left:30px;
+ }
+ 
