@@ -54,6 +54,18 @@ footer {
      font-size: 30px;
      border-radius: 50%;
  }
+ .social ul{
+    text-decoration: none;
+    list-style-type: none;
+
+ }
+ .social ul li{
+     display: inline;
+     padding-right: 30px;
+     text-align: center;
+     font-size: 30px;
+     border-radius: 50%;
+ }
  .Tamount{
      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
      font-size: 20px;
@@ -71,12 +83,13 @@ footer {
  }
 
  .bal{
-     border: 1px solid;
+     border: 1px;
      padding: 5px 70px;
      border-radius: 5px;
-     color: rgb(0, 0, 0, .3);
+     color: white;
      width: 200px;
      height: 40px;
+     background-color: rgb(0, 0, 0,.5);
  }
  
  .column{
