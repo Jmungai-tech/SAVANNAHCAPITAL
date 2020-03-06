@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -38,13 +39,13 @@
     <div class="container-fluid">      
       <h1>Funds Management</h1>
           <div class="row">
-              <form action="" class="submit">
+              <form action="" class="submit" autocomplete="off">
             <div class="col-md-6">
               <div class="form-group">
                 <div class="">
                   <label for="total-amount" class="Tamount">TOTAL AMOUNT</label>
-                  <input type="text" size="20" class="form-control" id="total-amount" style=" height: 40px; width: 300px; align-content: center;">
-                  <button id="postIncome">Submit Income</button>
+                  <input type="text" size="20" class="form-control" id="earnings" style=" height: 40px; width: 300px; align-content: center;">
+                  <button  class="postIncome btn btn-primary" id="postIncome">Submit Income</button>
                 </div>
                </div>
              
@@ -72,10 +73,13 @@
                 <input type="text" class="form-control"  id= "new-emergency">
             </div>
 
-            <button class="btn btn-primary submit" type="submit">Submit</button>
+            <button class="btn btn-primary submit" type="submit">SUBMIT</button>
+
 
             </div>
+           
         </div>
+        <p class="no-input"></p>
     </div>
 </form>
             
@@ -88,51 +92,57 @@
                 <h3>OTHERS</h3>
                     <div class="form-group">
                         <label for="new-description">DESCRIPTION</label>
-                        <input type="text"class="form-control"  id = "new-description">
+                        <input type="text"class="form-control"  id = "new-description" autocomplete="off">
                     </div>
 
                     <div class="form-group">
                        <label for="new-amount">AMOUNT</label>
-                       <input type="text" class="form-control"  id = "new-amount">
+                       <input type="text" class="form-control"  id = "new-amount" autocomplete="off">
                     </div>
-                    <button class="btn btn-primary" type="submit">Submit</button>
+                    <button class="btn1 btn btn-primary" type="submit">Submit</button>
                     
                 </div>
+                <div>
+                <p id="error"></p>
+                </div>
+                <div class="container">  
+                    
+                  <div class="displayResult">
+                           <table class="table table-bordered table-responsive">
+                              <thead>
+                              <tr>
+                                  <th>Item Description</th>
+                                  <th>Amounts</th>
+                              </tr>
+                              </thead>
+                              <tbody>
+                              
+                              
+                              </tbody>
+                              <tfoot>
+                              <tr>
+                                  <td>Total</td>
+                                  <td id="total"></td>
+                                  
+                              </tr>
+                              </tfoot>
+                          </table> 
+      
+                      
+      
+                  </div>
+          
+      </div>   
+
             </dIv> 
         </div>
     </div>  
 </div>
+    
 
 
-            <div class="container">  
-                        <span class="no-input border border-lg">PLEASE INPUT AMOUNT!</span>
-                    
-                        <div class="displayResult">
-                                 <table>
-                                    <thead>
-                                    <tr>
-                                        <th>Item Description</th>
-                                        <th>Amounts</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    
-                                    
-                                    </tbody>
-                                    <tfoot>
-                                    <tr>
-                                        <td>Total</td>
-                                        <td id="total"></td>
-                                        
-                                    </tr>
-                                    </tfoot>
-                                </table> 
-            
-                            <p id="error"></p>
-            
-                        </div>
-                
-            </div>   
+
+          
     
 
 
