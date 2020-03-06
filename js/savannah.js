@@ -61,7 +61,6 @@ $(document).ready(function(){
 
 
 
-
     $('.submit').click(function(event){
         event.preventDefault();
         total=Number($('#earnings').val());
@@ -73,7 +72,6 @@ $(document).ready(function(){
          emergency=Number($('#new-emergency').val());
 
          remAmount=rent + food + transport + insurance + emergency;
-
 
 
         $('#tableRent').append(rent);
@@ -106,6 +104,7 @@ $(document).ready(function(){
 
 
 
+            // $("#new-amount").keypress(function (e) {
 
             $("#new-amount").keypress(function (e) {
 
@@ -120,10 +119,22 @@ $(document).ready(function(){
 
 
 
+                    var income = sumTotal; 
+                    // $('.bal').val();
+                    var inpuitItem = $('#new-description').val();
+                    var inputValue = Number($('#new-amount').val());
+                    var inputs = new Other(inpuitItem, inputValue);
 
                     $('.btn1').click(function(event){
                           event.preventDefault();
 
+                    function addValues(){
+                        var itemsTotal = 0;
+                        for (var i in itemsArray){
+                            itemsTotal += itemsArray[i].value;
+                        };
+                        return itemsTotal;
+                    }
 
 
                     var income = sumTotal; 
@@ -142,6 +153,10 @@ $(document).ready(function(){
                     };
 
 
+                    if( inputs.item === "" || inputs.value === 0 ||  ( inputs.item === "" && inputs.value === 0 ) ){
+                        itemsArray.pop(inputs);
+                        return false;
+                    };
 
 
 
@@ -180,6 +195,8 @@ $(document).ready(function(){
 
                     
 
+                    var sumTotal = total - remAmount - addValues();
+                    $('.bal').text(sumTotal);
 
                     var sumTotal = total - remAmount - addValues();
                     $('.bal').text(sumTotal);
